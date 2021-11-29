@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/gallerystyles.css">
+</head>
+<body onload="displayCurrentYear()">
+    <header>
+        <div id="logo-box">
+            <img id="logo" src="images/window.png" alt="Look Out My Window Logo">
+        </div>
+        <div id="page-heading">
+            <h1>Look Out My Window</h1>
+            <h3>The live weather updates you need</h3>
+        </div>
+        <div id="menu" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </div>
+    </header>
+    <nav class="drop-down-menu" id="drop-down-nav">
+        <ul>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/index.html">Home</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/preston/preston.html">Preston</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/sodasprings/soda.html">Soda Springs</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/fishhaven/fish.html">Fish Haven</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li class="hamburger-link"><a class="current-page" href="/WDD-230-homework/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <div id="picture-1-box" class="picture-box">
+            <picture>
+                <img id="image-1" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-1.jpeg" alt="Weather Image">
+                <p>Rainy Day Downtown</p>
+            </picture>
+        </div>
+        <div id="picture-2-box" class="picture-box">
+            <picture>
+                <img id="image-2" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-2.jpeg" alt="Weather Image">
+                <p>Sunny Day in National Forrest</p>
+            </picture>
+        </div>
+        <div id="picture-3-box" class="picture-box">
+            <picture>
+                <img id="image-3" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-7.jpeg" alt="Weather Image">
+                <p>Snow Slopes</p>
+            </picture>
+        </div>
+        <div id="picture-4-box" class="picture-box">
+            <picture>
+                <img id="image-4" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-3.jpeg" alt="Weather Image">
+                <p>Snowy Hike</p>
+            </picture>
+        </div>
+        <div id="picture-5-box" class="picture-box">
+            <picture>
+                <img id="image-5" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-4.jpeg" alt="Weather Image">
+                <p>Preston on a Sunny Day</p>
+            </picture>
+        </div>
+        <div id="picture-6-box" class="picture-box">
+            <picture>
+                <img id="image-6" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-8.jpeg" alt="Weather Image">
+                <p>Lightning Strikes During Storm</p>
+            </picture>
+        </div>
+        <div id="picture-7-box" class="picture-box"><picture>
+            <img id="image-7" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-5.jpeg" alt="Weather Image">
+            <p>Fog Over Mountain</p>
+        </picture></div>
+        <div id="picture-8-box" class="picture-box">
+            <picture>
+                <img id="image-8" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-6.jpeg" alt="Weather Image">
+                <p>Snowy Mountain Top</p>
+            </picture>
+        </div>
+        <div id="picture-9-box" class="picture-box">
+            <picture>
+                <img id="image-9" class="images" src="images/gallery_images/gradient.png" data-src="images/gallery_images/weather-9.jpeg" alt="Weather Image">
+                <p>Dark Clouds Over Preston</p>
+            </picture>
+        </div>
+    </div>
+    <footer>
+        <div id="location-map">
+            <img src="images/map.png" alt="area map">
+        </div>
+        <div id="contact-box">
+            <h3>Contact Information</h3>
+            <p><img src="images/location.png" alt="location" class="icons"> 123 Sesame St. Flexburg, ID, 83440</p>
+            <p><img src="images/phone.png" alt="phone" class="icons"> (867) 530 - 9999</p>
+            <p><img src="images/email.png" alt="email" class="icons"> sirdaffyduck@gmail.com</p>
+            <div class = "social"> 
+                <a href="#"><img src="images/Facebook.png" alt="Facebook" class="social-icons"></a>
+                <a href="#"><img src="images/Instagram.png" alt="Instagram" class="social-icons"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icons"></a>
+          </div>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p><span id="date"></span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Out My Window</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="displayCurrentYear()">
+    <header>
+        <div id="logo-box">
+            <img id="logo" src="images/window.png" alt="Look Out My Window Logo">
+        </div>
+        <div id="page-heading">
+            <h1>Look Out My Window</h1>
+            <h3>The live weather updates you need</h3>
+        </div>
+        <div id="menu" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </div>
+    </header>
+    <nav class="drop-down-menu" id="drop-down-nav">
+        <ul>
+            <li class="hamburger-link"><a class="current-page" href="/WDD-230-homework/lesson11/index.html">Home</a></li>
+            <li class="hamburger-link" ><a href="/WDD-230-homework/lesson11/preston/preston.html">Preston</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/sodasprings/soda.html">Soda Springs</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/fishhaven/fish.html">Fish Haven</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="main-heading">Look Out My Window</h2>
+        <div class="cards"></div> 
+        <div id="main-sections">
+            <section class="news-story">
+                <h2 class="paragraph-heading">Best Snow In The World</h2>
+                <p class="paragraph-subtitle">By Recreational Reviews</p>
+                <img class="paragraph-image" src="images/pexels-photo-7406823_1_86_2_250x.jpeg" alt="Man excited to snow board.">
+                <p class="paragraph-content">
+                    Skiing has a history of almost five millennia. Modern skiing has evolved from beginnings in Scandinavia,
+                    and now it is a popular sport in the United States and Canada. Idaho is proud to offer the best snow in the world 
+                    to snowboarders and skiers from all over the world. 
+                    <br>
+                    <br>
+                    Be sure to check out the following ski resorts for the best snow in the world:
+                    Sun Valley,
+                    Tamarack Resort,
+                    Bogus Basin, 
+                    Schweitzer Mountain Resort, 
+                    Lookout Pass, 
+                    Brundage Mountain, 
+                    Silver Mountain.
+                </p>
+            </section>
+        </div>
+
+        <div class="wire-frames">
+            <ul>
+                <li><a href="https://wireframe.cc/2flUdV">Large View Wireframe</a></li>
+                <li><a href="https://wireframe.cc/6Ooil3">Medium View Wireframe</a></li>
+                <li><a href="https://wireframe.cc/0c1piG">Small View Wireframe</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="location-map">
+            <img src="images/map.png" alt="area map">
+        </div>
+        <div id="contact-box">
+            <h3>Contact Information</h3>
+            <p><img src="images/location.png" alt="location" class="icons"> 123 Sesame St. Flexburg, ID, 83440</p>
+            <p><img src="images/phone.png" alt="phone" class="icons"> (867) 530 - 9999</p>
+            <p><img src="images/email.png" alt="email" class="icons"> sirdaffyduck@gmail.com</p>
+            <div class = "social"> 
+                <a href="#"><img src="images/Facebook.png" alt="Facebook" class="social-icons"></a>
+                <a href="#"><img src="images/Instagram.png" alt="Instagram" class="social-icons"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icons"></a>
+          </div>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">Terms of Use</a></p>
+            <p><span id="date"></span></p>
+        </div>
+
+        
+        
+    </footer>
+    <script src="scripts/script.js"></script>
+    <!-- <script src="windchill.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        google: {
+          families: [
+             'Yaldevi',
+             'Roboto'
+          ]
+        }
+      });
+    </script>
+    <!-- <script src="scripts/weatherapi.js"></script> -->
+</body>
+</html>

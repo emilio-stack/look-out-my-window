@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda Springs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="displayCurrentYear()">
+    <header>
+        <div id="logo-box">
+            <img id="logo" src="images/window.png" alt="Look Out My Window Logo">
+        </div>
+        <div id="page-heading">
+            <h1>Look Out My Window</h1>
+            <h3>The live weather updates you need</h3>
+        </div>
+        <div id="menu" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </div>
+    </header>
+    <nav class="drop-down-menu" id="drop-down-nav">
+        <ul>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/index.html">Home</a></li>
+            <li class="hamburger-link" ><a href="/WDD-230-homework/lesson11/preston/preston.html">Preston</a></li>
+            <li class="hamburger-link"><a class="current-page" href="/WDD-230-homework/lesson11/sodasprings/soda.html">Soda Springs</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/fishhaven/fish.html">Fish Haven</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="main-heading">Soda Springs</h2>
+        <div id="main-sections">
+            <div class="hero-box">
+                <picture>
+                    <source srcset="images/soda-banner-medium.jpeg" alt="Banner of Preston Idaho"
+                    media="(min-width: 565px) and (max-width: 850px)">
+                    <source srcset="images/soda-banner-large.jpeg" alt="Banner of Preston Idaho"
+                    media="(min-width: 851px)">
+                    <img id="banner" src="images/soda-banner-small.jpeg" alt="Banner of Preston Idaho">
+                </picture>
+                <div id="weather-summary-box">
+                <p id="weather-table-header">Weather Summary</p>
+                <table id="weather-summary">
+                    <tr>
+                        <th>Currently:</th>
+                        <td class="weather-condition-value" id="currently"></td>
+                    </tr>
+                    <tr>
+                        <th>High:</th>
+                        <td class="weather-condition-value"><span id="high"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td class="weather-condition-value"><span id="wind-chill-value"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <td class="weather-condition-value"><span id="humidity"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed</th>
+                        <td class="weather-condition-value"><span id="wind-speed"></span></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            
+            <div id="forecast-box">
+                <p id="forecast-table-header">5 Day Forecast</p>
+                <table id="five-day-forecast">
+                    <tr>
+                        <th class="forecast-table-header">Wed</th>
+                        <th class="forecast-table-header">Thur</th>
+                        <th class="forecast-table-header">Fri</th>
+                        <th class="forecast-table-header">Sat</th>
+                        <th class="forecast-table-header">Sun</th>
+                    </tr>
+                    <tr>
+                        <td><img id="icon1"></img></td>
+                        <td><img id="icon2"></img></td>
+                        <td><img id="icon3"></img></td>
+                        <td><img id="icon4"></img></td>
+                        <td><img id="icon5"></img></td>
+                    </tr>
+                    <tr>
+                        <td id="degree1"></td>
+                        <td id="degree2"></td>
+                        <td id="degree3"></td>
+                        <td id="degree4"></td>
+                        <td id="degree5"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <section id="town-events">
+                <h2 class="paragraph-heading">Upcomming Events</h2>
+                
+            </section>
+
+            <section class="news-story">
+                <h2 class="paragraph-heading">Context of Geyser Song Day</h2>
+                <p class="paragraph-subtitle">By Soda Springs Historians</p>
+                <img class="paragraph-image" src="images/soda-article-img.jpeg" alt="Soda Springs Geyser Errupts">
+                <p class="paragraph-content">
+                    The city is named for the hundreds of natural springs of carbonated water that are located in and around the city.
+                    The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th 
+                    century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when 
+                    "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of 
+                    highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for weeks, and flooding 
+                    the downtown area, it was capped and manually released when requested as a tourist attraction. Now it is let loose every 
+                    hour on the hour by a timed release valve. Its height and volume have not decreased after many years. There are viewing 
+                    platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are located on the platforms 
+                    explaining this phenomenon.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="location-map">
+            <img src="images/map.png" alt="area map">
+        </div>
+        <div id="contact-box">
+            <h3>Contact Information</h3>
+            <p><img src="images/location.png" alt="location" class="icons"> 123 Sesame St. Flexburg, ID, 83440</p>
+            <p><img src="images/phone.png" alt="phone" class="icons"> (867) 530 - 9999</p>
+            <p><img src="images/email.png" alt="email" class="icons"> sirdaffyduck@gmail.com</p>
+            <div class = "social"> 
+                <a href="#"><img src="images/Facebook.png" alt="Facebook" class="social-icons"></a>
+                <a href="#"><img src="images/Instagram.png" alt="Instagram" class="social-icons"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icons"></a>
+          </div>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p><span id="date"></span></p>
+        </div>
+
+        
+        
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        google: {
+          families: [
+             'Yaldevi',
+             'Roboto'
+          ]
+        }
+      });
+    </script>
+    <script src="scripts/weatherapi.js"></script>
+</body>
+</html>

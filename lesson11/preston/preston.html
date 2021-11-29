@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="displayCurrentYear()">
+    <div id="pancake-banner" class="display">
+        <p>
+            Saturday = Preston Pancakes in the park! 
+            <br>
+            9:00 am Saturday at the city park.
+        </p>
+    </div>
+    <header>
+        <div id="logo-box">
+            <img id="logo" src="images/window.png" alt="Look Out My Window Logo">
+        </div>
+        <div id="page-heading">
+            <h1>Look Out My Window</h1>
+            <h3>The live weather updates you need</h3>
+        </div>
+        <div id="menu" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </div>
+    </header>
+    <nav class="drop-down-menu" id="drop-down-nav">
+        <ul>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/index.html">Home</a></li>
+            <li class="hamburger-link" ><a class="current-page" href="/WDD-230-homework/lesson11/preston/preston.html">Preston</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/sodasprings/soda.html">Soda Springs</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/fishhaven/fish.html">Fish Haven</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li class="hamburger-link"><a href="/WDD-230-homework/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="main-heading">Preston</h2>
+        <div id="main-sections">
+            <div class="hero-box">
+                <picture>
+                    <source srcset="images/homepage-banner-medium.jpeg" alt="Banner of Preston Idaho"
+                    media="(min-width: 565px) and (max-width: 850px)">
+                    <source srcset="images/homepage-banner-large.jpeg" alt="Banner of Preston Idaho"
+                    media="(min-width: 851px)">
+                    <img id="banner" src="images/homepage-banner-small.jpeg" alt="Banner of Preston Idaho">
+                </picture>
+                <div id="weather-summary-box">
+                <p id="weather-table-header">Weather Summary</p>
+                <table id="weather-summary">
+                    <tr>
+                        <th>Currently:</th>
+                        <td class="weather-condition-value" id="currently"></td>
+                    </tr>
+                    <tr>
+                        <th>High:</th>
+                        <td class="weather-condition-value"><span id="high"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td class="weather-condition-value"><span id="wind-chill-value"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <td class="weather-condition-value"><span id="humidity"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed</th>
+                        <td class="weather-condition-value"><span id="wind-speed"></span></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            
+            <div id="forecast-box">
+                <p id="forecast-table-header">5 Day Forecast</p>
+                <table id="five-day-forecast">
+                    <tr>
+                        <th class="forecast-table-header">Wed</th>
+                        <th class="forecast-table-header">Thur</th>
+                        <th class="forecast-table-header">Fri</th>
+                        <th class="forecast-table-header">Sat</th>
+                        <th class="forecast-table-header">Sun</th>
+                    </tr>
+                    <tr>
+                        <td><img id="icon1"></img></td>
+                        <td><img id="icon2"></img></td>
+                        <td><img id="icon3"></img></td>
+                        <td><img id="icon4"></img></td>
+                        <td><img id="icon5"></img></td>
+                    </tr>
+                    <tr>
+                        <td id="degree1"></td>
+                        <td id="degree2"></td>
+                        <td id="degree3"></td>
+                        <td id="degree4"></td>
+                        <td id="degree5"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <section id="town-events">
+                <h2 class="paragraph-heading">Upcomming Events</h2>
+                
+            </section>
+
+            <section class="news-story">
+                <h2 class="paragraph-heading">2021 Festival of Lights</h2>
+                <p class="paragraph-subtitle">By Preston Community Activities</p>
+                <img class="paragraph-image" src="images/preston-article-img.jpeg" alt="Preston City Park Lights Display">
+                <p class="paragraph-content">
+                    Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving and goes until December 31st. 
+                    The festival was started by two local business men (Wayne Bell and Walter Ross) along with many other community organizations to 
+                    help celebrate Christmas within the community. The festival consists of a lighted parade, fireworks, and displays in the city park. 
+                    The merchants along the main street of Preston have their store fronts decorated with Christmas lights during the festival. 
+                    <br>
+                    <br>
+                    A key event of the festival is the International Bed Race, which is held on the Saturday following Thanksgiving on the main street
+                    of Preston. Additional events are a kids' parade and free movie. The festival is a great way to see the city and the community and get
+                    to know the people. This year's parade will be held on the Saturday after Thanksgiving.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="location-map">
+            <img src="images/map.png" alt="area map">
+        </div>
+        <div id="contact-box">
+            <h3>Contact Information</h3>
+            <p><img src="images/location.png" alt="location" class="icons"> 123 Sesame St. Flexburg, ID, 83440</p>
+            <p><img src="images/phone.png" alt="phone" class="icons"> (867) 530 - 9999</p>
+            <p><img src="images/email.png" alt="email" class="icons"> sirdaffyduck@gmail.com</p>
+            <div class = "social"> 
+                <a href="#"><img src="images/Facebook.png" alt="Facebook" class="social-icons"></a>
+                <a href="#"><img src="images/Instagram.png" alt="Instagram" class="social-icons"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icons"></a>
+          </div>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p><span id="date"></span></p>
+        </div>
+
+        
+        
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        google: {
+          families: [
+             'Yaldevi',
+             'Roboto'
+          ]
+        }
+      });
+    </script>
+    <script src="scripts/weatherapi.js"></script>
+</body>
+</html>
